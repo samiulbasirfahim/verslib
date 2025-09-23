@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { BottomCard } from "../components/bottom-card";
 import Button from "../components/button";
 import { Hero } from "../components/hero";
@@ -20,7 +21,11 @@ export default function Page() {
                     <SVGpreview not_allowed={true} favourite={true} url={svg2} />
                     <SVGpreview not_allowed={true} favourite={false} url={svg} />
                 </div>
-                <Button variant="primary" className="max-w-sm w-full">See More</Button>
+                <Link to={"/explore"}>
+                    <Button variant="primary" className="max-w-sm w-full">
+                        See More
+                    </Button>
+                </Link>
             </div>
             <BottomCard />
         </div>
