@@ -19,7 +19,10 @@ export default function Button({
   ...props
 }: Props) {
   return (
-    <button className={twMerge([variants[variant], "", className])} {...props}>
+    <button
+      className={twMerge(["cursor-pointer", variants[variant], className])}
+      {...props}
+    >
       {children}
     </button>
   );

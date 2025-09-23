@@ -14,7 +14,7 @@ export default function LoginPage() {
           Forget your Password
         </Button>
         <Button variant="primary">Login</Button>
-        <Link to={"/register"}>
+        <Link to={"/register"} className="self-start">
           <Button variant="link" className="">
             Don't have an account, register ?
           </Button>

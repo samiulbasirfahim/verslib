@@ -14,7 +14,7 @@ export default function RegisterPage() {
         <Input placeholder="Confirm Password..." />
         <Button variant="primary">Register</Button>
 
-        <Link to={"/login"}>
+        <Link to={"/login"} className="self-start">
           <Button variant="link" className="">
             Already have an account, login ?
           </Button>

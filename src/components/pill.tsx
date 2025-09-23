@@ -1,5 +1,28 @@
-export function Pill({ text }: { text: string }) {
+import { twMerge } from "tailwind-merge";
+
+export function Pill({
+    text,
+    className = "",
+    selected = false,
+    onClick,
+}: {
+    text: string;
+    className?: string;
+    selected?: boolean;
+    onClick?: () => void;
+}) {
     return (
-        <button className="border-foreground border-1 bg-muted-background/60 px-3 py-1 rounded-4xl text-foreground cursor-pointer">{text}</button>
+        <button
+            onClick={onClick}
+            className={twMerge(
+                "border-foreground border-1 px-3 py-1 rounded-4xl text-foreground cursor-pointer",
+                selected
+                    ? "bg-primary/20 text-foreground border-primary"
+                    : "bg-muted-background/60 text-foreground",
+                className,
+            )}
+        >
+            {text}
+        </button>
     );
 }

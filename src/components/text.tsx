@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const variants = {
   title: "text-3xl text-primary",
+  "sub-title": "text-xl text-primary",
 };
 
 type Props = {
