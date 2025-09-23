@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router";
-import Button from "../components/button";
 export function Navbar() {
     return (
         <header className="border-b-muted-background border-b-1 sticky top-0 backdrop-blur-md bg-muted-background/30">
