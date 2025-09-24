@@ -19,7 +19,7 @@ export function Hero() {
 
                 <button className="cursor-pointer">
                     <img
-                        src="/public/search_icon.png"
+                        src="/search_icon.png"
                         className="absolute top-1/2 -translate-y-1/2 right-3"
                     />
                 </button>

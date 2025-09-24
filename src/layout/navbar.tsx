@@ -5,7 +5,7 @@ export function Navbar() {
             <div className="container mx-auto flex justify-between">
                 <nav className="flex items-center gap-4 py-2">
                     <NavLink to="/" end>
-                        <img width={50} src="/public/logo.svg" />
+                        <img width={50} src="/logo.svg" />
                     </NavLink>
 
                     <NavLink

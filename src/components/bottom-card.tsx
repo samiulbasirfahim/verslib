@@ -1,6 +1,6 @@
 export function BottomCard() {
     return (
-        <div className="container mx-auto bg-[url(/public/bottom_card_bg.png)] rounded-2xl bg-muted-background bg-cover mb-8">
+        <div className="container mx-auto bg-[url(/bottom_card_bg.png)] rounded-2xl bg-muted-background bg-cover mb-8">
             <div className="p-8 flex-col items-center justify-center gap-6 w-full flex">
                 <h3 className="text-center text-5xl w-full max-w-2xl text-foreground font-black leading-[58px] left-right-gradient">
                     Join our community and claim free products
