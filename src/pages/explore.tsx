@@ -18,7 +18,7 @@ const categories = [
 export default function ExplorePage() {
     const svg = "http://localhost:8080/test-svg.svg";
     const svg1 = "http://localhost:8080/block-1.svg";
-    const svg2 = "http://localhost:8080/block-1.svg";
+    const svg2 = "http://localhost:8080/block-2.svg";
 
     const [text, setText] = useState("");
 
@@ -102,7 +102,7 @@ export default function ExplorePage() {
                 <div className="gap-4 justify-center w-4/5">
                     <div className="w-full h-22 sticky top-0 bg-background z-100 flex justify-between items-center gap-4 pr-8">
                         <Link to={"/"}>
-                            <img src="/public/logo.svg" className="cursor-pointer" />
+                            <img width={50} src="/public/logo.svg" className="cursor-pointer" />
                         </Link>
                         <input
                             placeholder="Search components, elements..."

@@ -1,8 +1,8 @@
 import { Link, NavLink } from "react-router";
 export function Navbar() {
     return (
-        <header className="border-b-muted-background border-b-1 sticky top-0 backdrop-blur-md bg-muted-background/30">
-            <div className="container mx-auto flex justify-between ">
+        <header className="border-b-muted-background border-b-1 sticky top-0 backdrop-blur-md bg-muted-background/30 z-[99999]">
+            <div className="container mx-auto flex justify-between">
                 <nav className="flex items-center gap-4 py-2">
                     <NavLink to="/" end>
                         <img width={50} src="/public/logo.svg" />
