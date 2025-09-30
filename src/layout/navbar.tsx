@@ -79,7 +79,7 @@ export function Navbar() {
                         </NavLink>
 
                         <Link to={"/settings"}>
-                            <img width={50} src="/public/logo.svg" />
+                            <img width={50} src="/logo.svg" />
                         </Link>
                     </nav>
                 )}
