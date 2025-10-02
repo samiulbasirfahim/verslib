@@ -7,7 +7,7 @@ export function useGetCategories() {
     staleTime: 0,
     queryFn: () =>
       fetcher({
-        endpoint: "categories/",
+        endpoint: "/categories/",
         options: {
           method: "GET",
         },

@@ -1,4 +1,4 @@
-const BASE_URL = "http://10.10.13.59:8888/api";
+const BASE_URL = "http://10.10.13.59:8080/api";
 
 export class ApiError extends Error {
     public status: number;

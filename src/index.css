@@ -2,27 +2,33 @@
 @import "tailwindcss";
 
 @theme {
-    --color-background: #0c0c0c;
-    --color-muted-background: #1b1b1b;
-    /* --color-primary: #ccff00; */
-    --color-primary: #6F00FF;
-    --color-foreground: #ffffff;
-    --color-muted-foreground: #ffffff80;
-    --default-font-family: "Space Grotesk", sans-serif;
+  --color-background: #0c0c0c;
+  --color-muted-background: #1b1b1b;
+  /* --color-primary: #ccff00; */
+  --color-primary: #6f00ff;
+  --color-foreground: #ffffff;
+  --color-muted-foreground: #ffffff80;
+  --default-font-family: "Space Grotesk", sans-serif;
 }
 
 body {
-    @apply bg-background text-foreground;
+  @apply bg-background text-foreground;
 }
 
 .top-bottom-gradient {
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .left-right-gradient {
-    background: -webkit-linear-gradient(left, #eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.masonry-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
