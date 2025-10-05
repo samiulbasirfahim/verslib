@@ -61,7 +61,7 @@ export default function RegisterPage() {
 
         mutate(form, {
             onSuccess(res: any) {
-                const { _access, _refresh, user } = res;
+                const { user } = res;
                 console.log("Registered:", user);
             },
             onError(err) {

@@ -7,8 +7,6 @@ import { Pill } from "../components/pill";
 import { useGetCategories } from "../lib/queries/category";
 import { useGetFiles } from "../lib/queries/components";
 import Masonry from "react-masonry-css";
-import { useSearchParams } from "react-router";
-import { useParams } from "react-router";
 
 type Category = {
     id: number;
@@ -259,11 +257,11 @@ export default function ExplorePage() {
                             Previous
                         </Button>
                         <Text className="text-lg">
-                            Page {page + 1} of {Math.ceil((filesData?.count ?? 0) / limit)}
+                            Page {page + 1} of {Math.ceil(((filesData as any)?.count ?? 0) / limit)}
                         </Text>
                         <Button
                             disabled={
-                                isFetching || (page + 1) * limit >= (filesData?.count ?? 0)
+                                isFetching || (page + 1) * limit >= ((filesData as any)?.count ?? 0)
                             }
                             className="disabled:text-gray-600"
                             onClick={() => setPage((p) => p + 1)}
